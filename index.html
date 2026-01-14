@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - ហាងលក់ទំនិញអនឡាញ</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img class="logo-icon" src="./IMG/user_logo/user.png" alt="">
+                <div style="display: flex;justify-content: start;align-items: left;flex-direction: column;">
+                    <p class="logo-text">SIREYVORTH</p>
+                    <p class="gmail_text">sereyvorthlun@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+            <label for="hamburger" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ទំព័រដើម</a></li>
+                <li><a href="#products" class="nav-link">ផលិតផល</a></li>
+                <li class="logo_mid">Psa Krobao</li>
+                <li class="nav-dropdown">
+                    <span class="nav-link" style="display: flex; align-items: center;">ប្រភេទទំនិញ
+                        <i data-lucide="chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="dryFoodkh.html">អាហារស្ងួត</a>
+                        <a href="Beveragekh.html">ភេសជ្ជៈ</a>
+                        <a href="nonFoodkh.html">មិនមែនអាហារ</a>
+                        <a href="freshFoodkh.html">អាហារស្រស់</a>
+                        <a href="butcherykh.html">សាច់</a>
+                        <a href="electronickh.html">ឧបករណ៍អគ្គិសនី</a>
+                    </div>
+                </li>
+                <li><a href="contactkh.html" class="nav-link">ទំនាក់ទំនង</a></li>
+                <li><a href="cartkh.html" class="nav-link cart_acc">កន្ត្រក</a></li>
+                <li><a href="loginkh.html" class="nav-link cart_acc">គណនី</a></li>
+            </ul>
+
+            <div class="nav_left">
+                <a href="indexkh.html"><img class="language"
+                        src="https://img.icons8.com/?size=100&id=15534&format=png&color=000000" alt=""></a>
+                <div class="user">
+                    <li><a href="cartkh.html"> <i class="icon_add_cart" data-lucide="handbag"></i></a></li>
+                    <a href="loginkh.html"><img
+                            src="https://img.icons8.com/?size=100&id=2yC9SZKcXDdX&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img style="filter: blur(3px); width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;"
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/a7/79/7b/a-wide-area-with-fresh.jpg?w=900&h=500&s=1"
+            alt="">
+        <div class="hero-content">
+            <h1>សូមស្វាគមន៍</h1>
+            <p>ហាង Supermarket អនឡាញសម្រាប់ទំនិញគុណភាព</p>
+            <a href="#products" class="btn btn-primary">ទិញឥឡូវនេះ</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="products" class="categories" <div class="container">
+        <h2>ទិញតាមប្រភេទ</h2>
+        <div class="category-grid">
+            <a style="text-decoration: none;" href="dryFoodkh.html">
+                <div class="category-card" id="dry-food">
+                    <div class="category-icon">🌾</div>
+                    <h3>អាហារស្ងួត</h3>
+                    <p>អង្ករ ប៉ាស្តា គ្រាប់ធញ្ញជាតិ និងផ្សេងៗទៀត</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;" href="nonFoodkh.html">
+                <div class="category-card" id="non-food">
+                    <div class="category-icon">🧴</div>
+                    <h3>ទំនិញមិនមែនអាហារ</h3>
+                    <p>សម្ភារៈគេហដ្ឋាន និងថែរក្សាផ្ទាល់ខ្លួន</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;" href="freshFoodkh.html">
+                <div class="category-card" id="fresh-food">
+                    <div class="category-icon">🥬</div>
+                    <h3>អាហារស្រស់</h3>
+                    <p>បន្លែ និងផ្លែឈើស្រស់</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;" href="Beveragekh.html">
+                <div class="category-card" id="beverages">
+                    <div class="category-icon">🍹</div>
+                    <h3>ភេសជ្ជៈ</h3>
+                    <p>ទឹកផ្លែឈើ ភេសជ្ជៈ និងផ្សេងៗទៀត</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;" href="electronickh.html">
+                <div class="category-card" id="electric-appliances">
+                    <div class="category-icon">🔌</div>
+                    <h3>ឧបករណ៍អគ្គិសនី</h3>
+                    <p>ឧបករណ៍ផ្ទះបាយ និងប្រើប្រាស់ក្នុងផ្ទះ</p>
+                </div>
+            </a>
+            <a style="text-decoration: none;" href="butcherykh.html">
+                <div class="category-card" id="butchery">
+                    <div class="category-icon">🔌</div>
+                    <h3>សាច់ស្រស់</h3>
+                    <p>សាច់គោ និងសាច់ស្រស់ផ្សេងៗ</p>
+                </div>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <a style="text-decoration: none;" href="#home">
+            <div class="arraow_up">
+                <i class="icon_up" data-lucide="arrow-up"></i>
+            </div>
+        </a>
+        <div class="container">
+            <h2>ផលិតផលពិសេស</h2>
+
+            <div class="category-section">
+                <h3 class="category-title">🌾 អាហារស្ងួត</h3>
+                <div class="products-grid">
+
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/1.jpeg" alt="">
+                        <h4>ទឹកត្រី LobsterYacht 5.8 គីឡូក្រាម × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/2.jpeg" alt="">
+                        <h4>ទឹកម្ទេស NGOV HENG 500 មីលីលីត្រ × 6</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/3.jpeg" alt="">
+                        <h4>ទឹកត្រី NH THREE SEA 5 លីត្រ × 3</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/4.jpeg" alt="">
+                        <h4>ទឹកត្រី NH THREE SEA 730 មីលីលីត្រ × 6</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/5.jpeg" alt="">
+                        <h4>ទឹកខ្មេះ NGOV HENG 450 មីលីលីត្រ × 6</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/6.jpeg" alt="">
+                        <h4>ស្វាយស្ងួត THNOT ពិសេស 200 ក្រាម × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/7.jpeg" alt="">
+                        <h4>ស្វាយរមៀល THNOT រសជាតិចេក 200 ក្រាម × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_dryfood/8.jpeg" alt="">
+                        <h4>ស្វាយរមៀល THNOT រសជាតិដើម 200 ក្រាម × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h3 class="category-title">🧴 ទំនិញមិនមែនអាហារ</h3>
+                <div class="products-grid">
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/1.png" alt="">
+                        <h4>*កញ្ច្រែងជ្រុង HP 47×35×17 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/2.png" alt="">
+                        <h4>*កញ្ច្រែងនំ HP 47×34×22 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/3.png" alt="">
+                        <h4>*កញ្ច្រែងនំ HP 60×42×15 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/4.png" alt="">
+                        <h4>*កញ្ច្រែងនំ HP 60×42×25 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/5.png" alt="">
+                        <h4>*កញ្ច្រែងនំ HP 60×42×31 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/6.png" alt="">
+                        <h4>*កញ្ច្រែងនំ HP 60×42×35 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/7.png" alt="">
+                        <h4>*កញ្ច្រែងជ្រុង HP 3.4×2.75×1.2 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_nonfood/8.png" alt="">
+                        <h4>កញ្ច្រែងជ្រុង HP 3.8×3×1.25 សង់ទីម៉ែត្រ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h3 class="category-title">🥬 អាហារស្រស់</h3>
+                <div class="products-grid">
+
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/1.png" alt="">
+                        <h4>នំក្រូសង់តូច MINI 30 ក្រាម × 10</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/2.png" alt="">
+                        <h4>នំក្រូសង់ប៊ឺរ BUTTER 70 ក្រាម × 4</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/3.png" alt="">
+                        <h4>នំរមៀល KH CRISPY ROLL រសជាតិដូរៀន 165 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/4.png" alt="">
+                        <h4>នំរមៀល KH CRISPY ROLL រសជាតិដើម 165 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/5.png" alt="">
+                        <h4>នំប៉័ង KRAFTKORN BAKE HOUSE 350 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/6.png" alt="">
+                        <h4>នំប៉័ងបារាំង FRENCH BAGUETTE 110 ក្រាម × 3</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/7.png" alt="">
+                        <h4>នំប៉័ងដំបងឈីស 55 ក្រាម × 2 ដុំ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/_freshfood/bakery/8.png" alt="">
+                        <h4>នំប៉័ងសាច់ជ្រូកខ្ទេច 40 ក្រាម × 6 ដុំ</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h3 class="category-title">🍹 ភេសជ្ជៈ</h3>
+                <div class="products-grid">
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/1.png" alt="">
+                        <h4>ទឹកដោះអាល់ម៉ុន ALMOND BREEZE 946 មីលីលីត្រ × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/2.png" alt="">
+                        <h4>ទឹកដោះអាល់ម៉ុនរសជាតិសូកូឡា 180 មីលីលីត្រ × 3</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/3.png" alt="">
+                        <h4>ទឹកដោះអាល់ម៉ុនរសជាតិដើម 180 មីលីលីត្រ × 3</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/4.png" alt="">
+                        <h4>ទឹកដោះអាល់ម៉ុនរសជាតិវ៉ានីឡា 180 មីលីលីត្រ × 3</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/5.png" alt="">
+                        <h4>ទឹកដោះគោស្រស់ ANGKOR មិនផ្អែម 1 លីត្រ × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/6.png" alt="">
+                        <h4>ទឹកដោះគោ ANGKOR FINO ផ្អែម 220 មីលីលីត្រ × 48</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/7.png" alt="">
+                        <h4>ទឹកដោះគោ ANGKOR UHT មិនផ្អែម 220 មីលីលីត្រ × 48</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/beverage/milk/8.png" alt="">
+                        <h4>គ្រីមផ្អែមកុងដិនស៍ ARO (មិនមែនទឹកដោះគោ) 2 គីឡូក្រាម × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h3 class="category-title">🔌 ឧបករណ៍អគ្គិសនី</h3>
+                <div class="products-grid">
+
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/1.png" alt="">
+                        <h4>ឡអគ្គិសនី Halogen Smarthome 12 លីត្រ #MV - 009</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/2.png" alt="">
+                        <h4>ម៉ាស៊ីនកិនអគ្គិសនី Smarthome 2 លីត្រ #SM-CP1603</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/3.png" alt="">
+                        <h4>ខ្ទះអគ្គិសនី Smarthome 12 អ៊ីញ #SVEP1001</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/4.png" alt="">
+                        <h4>ខ្ទះអគ្គិសនី Smarthome #SM-BBQ2000</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/5.png" alt="">
+                        <h4>ខ្ទះអគ្គិសនី Smarthome 3 លីត្រ #SV-EP1000</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/6.png" alt="">
+                        <h4>ឆ្នាំងបាយអគ្គិសនី Smarthome 1.8 លីត្រ #NC-R16</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/7.png" alt="">
+                        <h4>ឆ្នាំងបាយអគ្គិសនី Smarthome 1 លីត្រ #SRC1012</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/8.png" alt="">
+                        <h4>ដែកអ៊ុត Otto 1000 វ៉ាត់ #EI-608</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h3 class="category-title">ផលិតផលសាច់ស្រស់</h3>
+                <div class="products-grid">
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/1.jpeg">
+                        <h4>សាច់គោក្រាស់កិន (គីឡូក្រាម)</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/2.jpeg">
+                        <h4>សាច់គោអូស្ទើរប្លេដ បង្កក ពីអូស្ត្រាលី ចិញ្ចឹមស្មៅ 250 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/3.jpeg">
+                        <h4>សាច់គោ Chuck Roll បង្កក ពីអូស្ត្រាលី ចិញ្ចឹមស្មៅ 250 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/4.jpeg">
+                        <h4>សាច់គោ Cube Roll បង្កក ពីអូស្ត្រាលី mPRO 200 ក្រាម × 1</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/5.jpeg">
+                        <h4>សាច់គោ Striploin ពីអូស្ត្រាលី mPRO (Halal/Vacuum) 200 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/6.jpeg">
+                        <h4>សាច់គោ Oyster Blade ចិញ្ចឹមគ្រាប់ធញ្ញជាតិ mPRO (Halal/Vacuum) 400 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/7.jpeg">
+                        <h4>សាច់គោ Striploin ចិញ្ចឹមគ្រាប់ធញ្ញជាតិ ពីអូស្ត្រាលី mPRO (Halal/Vacuum) 400 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/butchery/beef/8.jpeg">
+                        <h4>សាច់គោ Cube Roll ចិញ្ចឹមគ្រាប់ធញ្ញជាតិ mPRO (Halal/Vacuum) 400 ក្រាម</h4>
+                        <div class="product-price">១២៥០០៛</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>បញ្ចូលទៅកន្រ្តក
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section" style="display:none;">
+        <div class="container">
+            <div class="cart-header">
+                <h2>កន្ត្រកទំនិញ</h2>
+                <a href="#home" class="btn btn-secondary">បន្តទិញទំនិញ</a>
+            </div>
+            <div class="cart-content">
+                <p style="text-align: center; color: #666;">មិនទាន់មានទំនិញក្នុងកន្ត្រក</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>អំពីយើង</h4>
+                <p>PsaKrobao ជា Supermarket អនឡាញដែលអាចទុកចិត្តបាន ផ្តល់ជូនទំនិញគុណភាពដល់មុខផ្ទះអ្នក។</p>
+            </div>
+            <div class="footer-section">
+                <h4>តំណភ្ជាប់រហ័ស</h4>
+                <ul>
+                    <li><a href="#home">ទំព័រដើម</a></li>
+                    <li><a href="#products">ផលិតផល</a></li>
+                    <li><a href="login.html">គណនី</a></li>
+                    <li><a href="#">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>សេវាកម្មអតិថិជន</h4>
+                <ul>
+                    <li><a href="#">ព័ត៌មានដឹកជញ្ជូន</a></li>
+                    <li><a href="#">ការប្តូរទំនិញ</a></li>
+                    <li><a href="#">សំណួរញឹកញាប់</a></li>
+                    <li><a href="#">គាំទ្រ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>ទំនាក់ទំនង</h4>
+                <p>អ៊ីមែល៖ lunsereyvorth@gmail.com</p>
+                <p>ទូរស័ព្ទ៖ +855-97-7421-375</p>
+                <p>ម៉ោង៖ ច័ន្ទ–អាទិត្យ 8AM–10PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Psa-Krobao. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 20,
+            duration: 500,
+            easing: 'ease-in-out',
+            once: false
+        });
+    </script>
+
+</body>
+
+</html>

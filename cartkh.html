@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - FreshMart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img class="logo-icon" src="./IMG/user_logo/user.png" alt="">
+                <div style="display: flex;justify-content: start;align-items: left;flex-direction: column;">
+                    <p class="logo-text">SIREYVORTH</p>
+                    <p class="gmail_text">sereyvorthlun@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+            <label for="hamburger" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="indexkh.html" class="nav-link">ទំព័រដើម</a></li>
+                <li><a href="#products" class="nav-link">ផលិតផល</a></li>
+                <li class="logo_mid">Psa Krobao</li>
+                <li class="nav-dropdown">
+                    <span class="nav-link" style="display: flex; align-items: center;">ប្រភេទទំនិញ
+                        <i data-lucide="chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="dryFoodkh.html">អាហារស្ងួត</a>
+                        <a href="Beveragekh.html">ភេសជ្ជៈ</a>
+                        <a href="nonFoodkh.html">មិនមែនអាហារ</a>
+                        <a href="freshFoodkh.html">អាហារស្រស់</a>
+                        <a href="butcherykh.html">សាច់</a>
+                        <a href="electronickh.html">ឧបករណ៍អគ្គិសនី</a>
+                    </div>
+                </li>
+                <li><a href="contactkh.html" class="nav-link">ទំនាក់ទំនង</a></li>
+                <li><a href="cartkh.html" class="nav-link cart_acc">កន្ត្រក</a></li>
+                <li><a href="loginkh.html" class="nav-link cart_acc">គណនី</a></li>
+            </ul>
+
+            <div class="nav_left">
+                <a href="cart.html"><img class="language"
+                        src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt=""></a>
+                <div class="user">
+                    <li><a href="cart.html"> <i class="icon_add_cart" data-lucide="handbag"></i></a></li>
+                    <a href="login.html"><img
+                            src="https://img.icons8.com/?size=100&id=2yC9SZKcXDdX&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-header">
+                <h1>កន្ត្រកទំនិញ</h1>
+                <a href="indexkh.html" class="btn btn-secondary">បន្តការទិញទំនិញ</a>
+            </div>
+
+            <div class="cart-container">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img class="item-image" src="./IMG/Local_Product/_freshfood/Vegetable/16.png" alt="">
+                        <div class="item-details">
+                            <h3>អង្ករបាស្មាទី</h3>
+                            <p class="item-desc">១គីឡូក្រាម គុណភាពល្អ</p>
+                            <p class="item-price">$5.99</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn">−</button>
+                            <input type="text" value="2" class="qty-input" readonly>
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <div class="item-total">
+                            <p class="total-price">$11.98</p>
+                        </div>
+                        <button class="btn-remove"><i data-lucide="trash-2"></i></button>
+                    </div>
+
+                    <div class="cart-item">
+                        <img class="item-image" src="./IMG/Local_Product/_freshfood/Vegetable/5.png" alt="">
+                        <div class="item-details">
+                            <h3>សាឡាត់ស្រស់</h3>
+                            <p class="item-desc">១ដុំ - ស្រស់និងក្រអូប</p>
+                            <p class="item-price">$2.49</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn">−</button>
+                            <input type="text" value="1" class="qty-input" readonly>
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <div class="item-total">
+                            <p class="total-price">$2.49</p>
+                        </div>
+                        <button class="btn-remove"><i data-lucide="trash-2"></i></button>
+                    </div>
+
+                    <div class="cart-item">
+                        <img class="item-image" src="./IMG/Local_Product/_freshfood/Vegetable/18.png" alt="">
+                        <div class="item-details">
+                            <h3>សាប៊ូលាងដៃ</h3>
+                            <p class="item-desc">ទឹកសាប៊ូ 250ml</p>
+                            <p class="item-price">$2.99</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn">−</button>
+                            <input type="text" value="3" class="qty-input" readonly>
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <div class="item-total">
+                            <p class="total-price">$8.97</p>
+                        </div>
+                        <button class="btn-remove"><i data-lucide="trash-2"></i></button>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>សង្ខេបការបញ្ជាទិញ</h2>
+
+                    <div class="summary-row">
+                        <span>តម្លៃសរុបរង:</span>
+                        <span>$23.44</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>ថ្លៃដឹកជញ្ជូន:</span>
+                        <span>$4.99</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>ពន្ធ:</span>
+                        <span>$2.27</span>
+                    </div>
+
+                    <div class="promo-code">
+                        <input type="text" placeholder="លេខកូដបញ្ចុះតម្លៃ" class="promo-input">
+                        <button class="btn btn-secondary">អនុវត្ត</button>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>តម្លៃសរុប:</span>
+                        <span class="total-amount">$30.70</span>
+                    </div>
+
+                    <a href="checkoutkh.html" class="btn btn-primary btn-full">បន្តទៅការទូទាត់</a>
+
+                    <button class="btn btn-secondary btn-full"
+                        style="margin-top: 1rem;">រក្សាទុកសម្រាប់ពេលក្រោយ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>អំពីយើង</h4>
+                <p>PsaKrobao ជា Supermarket អនឡាញដែលអាចទុកចិត្តបាន ផ្តល់ជូនទំនិញគុណភាពដល់មុខផ្ទះអ្នក។</p>
+            </div>
+            <div class="footer-section">
+                <h4>តំណភ្ជាប់រហ័ស</h4>
+                <ul>
+                    <li><a href="#home">ទំព័រដើម</a></li>
+                    <li><a href="#products">ផលិតផល</a></li>
+                    <li><a href="login.html">គណនី</a></li>
+                    <li><a href="#">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>សេវាកម្មអតិថិជន</h4>
+                <ul>
+                    <li><a href="#">ព័ត៌មានដឹកជញ្ជូន</a></li>
+                    <li><a href="#">ការប្តូរទំនិញ</a></li>
+                    <li><a href="#">សំណួរញឹកញាប់</a></li>
+                    <li><a href="#">គាំទ្រ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>ទំនាក់ទំនង</h4>
+                <p>អ៊ីមែល៖ lunsereyvorth@gmail.com</p>
+                <p>ទូរស័ព្ទ៖ +855-97-7421-375</p>
+                <p>ម៉ោង៖ ច័ន្ទ–អាទិត្យ 8AM–10PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Psa-Krobao. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

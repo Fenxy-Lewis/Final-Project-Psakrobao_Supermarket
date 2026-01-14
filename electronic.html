@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Online Supermarket</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img class="logo-icon" src="./IMG/user_logo/user.png" alt="">
+                <div style="display: flex;justify-content: start;align-items: left;flex-direction: column;">
+                    <p class="logo-text">Sireyvorth</p>
+                    <p class="gmail_text">sereyvorthlun@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+            <label for="hamburger" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li class="logo_mid">Psa Krobao</li>
+                <li class="nav-dropdown">
+                    <span class="nav-link" style="display: flex; align-items: center;">Categories
+                        <i data-lucide="chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="dryFood.html">Dry Food</a>
+                        <a href="Beverage.html">Beverages</a>
+                        <a href="nonFood.html">Non Food</a>
+                        <a href="freshFood.html">Fresh Food</a>
+                        <a href="butchery.html">Butchery</a>
+                        <a href="electronic.html">Electric Appliances</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link cart_acc">Cart</a></li>
+                <li><a href="login.html" class="nav-link cart_acc">Account</a></li>
+            </ul>
+
+            <div class="nav_left">
+                <a href="electronickh.html"><img class="language"
+                        src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt=""></a>
+                <div class="user">
+                    <li><a href="cart.html"> <i class="icon_add_cart" data-lucide="handbag"></i></a></li>
+                    <!-- <a href="login.html"><img src="IMG/user_logo/user.png" alt=""></a> -->
+                    <a href="login.html"><img
+                            src="https://img.icons8.com/?size=100&id=2yC9SZKcXDdX&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="https://c8.alamy.com/comp/2XPM7D2/middle-aisle-lidl-middle-of-lidl-featuring-non-food-items-wales-uk-01-august-2024-2XPM7D2.jpg"
+            alt="">
+        <div class="hero-content">
+            <h1>ELECTRONIC
+            </h1>
+            <p>Your one-stop online supermarket for quality groceries</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+    <!-- Categories Section -->
+    <section id="products" class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <a style="text-decoration: none;" href="electronic.html">
+                    <div style="background-color: #1e5631;" class="category-card" id="non-food">
+                        <div class="category-icon">🧴</div>
+                        <h3 style="color: white;">Electric</h3>
+                        <p style="color: white;">Kitchen & Home Appliances</p>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="dryFood.html">
+                    <div class="category-card" id="dry-food">
+                        <div class="category-icon">🌾</div>
+                        <h3>Dry Food</h3>
+                        <p>Rice, Pasta, Cereals & More</p>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="freshFood.html">
+                    <div class="category-card" id="fresh-food">
+                        <div class="category-icon">🥬</div>
+                        <h3>Fresh Food</h3>
+                        <p>Fresh Vegetables & Fruits</p>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="Beverage.html">
+                    <div class="category-card" id="beverages">
+                        <div class="category-icon">🍹</div>
+                        <h3>Beverages</h3>
+                        <p>Juices, Soft Drinks & More</p>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="nonFood.html">
+                    <div class="category-card" id="electric-appliances">
+                        <div class="category-icon">🔌</div>
+                        <h3>Non Food</h3>
+                        <p>Kitchen & Home Appliances</p>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="butchery.html">
+                    <div class="category-card" id="electric-appliances">
+                        <div class="category-icon">🔌</div>
+                        <h3>Butchery</h3>
+                        <p>Household & Personal Care</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+                <a style="text-decoration: none;" href="#home">
+            <div class="arraow_up">
+                <i class="icon_up" data-lucide="arrow-up"></i>
+            </div>
+        <div class="container">
+            <!-- Non Food Products -->
+            <div class="category-section">
+                <h3 class="category-title"> <img
+                        src="https://img.icons8.com/?size=100&id=VWzrGTDdZ3NA&format=png&color=000000" alt=""> Non Food
+                    Items</h3>
+                <div class="products-grid">
+
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/1.png" alt="">
+                        <h4>Smarthome Halogen Oven 12L #MV-009</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/2.png" alt="">
+                        <h4>Smarthome Electric Chopper 2L #SM-CP1603</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/3.png" alt="">
+                        <h4>Smarthome Fry Pan SVEP1001 / 12" NO</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/4.png" alt="">
+                        <h4>Smarthome Electric Pan #SM-BBQ2000</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/5.png" alt="">
+                        <h4>Smarthome Electric Pan 3L #SV-EP1000</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/6.png" alt="">
+                        <h4>Smarthome Rice Cooker 1.8L #NC-R16</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/7.png" alt="">
+                        <h4>Smarthome Rice Cooker 1L #SRC1012</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/8.png" alt="">
+                        <h4>Otto Dry Iron 1000W #EI-608</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/9.png" alt="">
+                        <h4>Panasonic Iron #NI317TVSG / Dry Non</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/10.png" alt="">
+                        <h4>Smarthome Air Fryer 5.5L #MV1406BP</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/11.png" alt="">
+                        <h4>Otto Suki Pot 3L #SP-323A</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/12.png" alt="">
+                        <h4>Gray Star Gas Stove K04CS x 1 PC</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/13.png" alt="">
+                        <h4>Imarflex Blender #IF-303 / 315</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/14.png" alt="">
+                        <h4>Anitech Rice Cooker 1.8L #SRC18B</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/15.png" alt="">
+                        <h4>Hanabishi Rice Cooker 1.8L #HAP-818D</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/16.png" alt="">
+                        <h4>Sokany Grinder 5L #SK-7015</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/17.png" alt="">
+                        <h4>Sokany Juice Extractor 800W #SK4000</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/18.png" alt="">
+                        <h4>Aiko Rechargeable Fan #KN-2816U Blue / Pink</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/19.png" alt="">
+                        <h4>Aiko Table Fan 14" #AK-D404</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/20.png" alt="">
+                        <h4>Aiko Table Fan 12" #AVS-212</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/21.png" alt="">
+                        <h4>Rice Cooker Mitsumaru 3L #AP-1830</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/22.png" alt="">
+                        <h4>Toshiba Refrigerator 1 Door 180L #GR-D189D MS/SB</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/23.png" alt="">
+                        <h4>LG Refrigerator 205L #GN-B202SQBB</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/24.png" alt="">
+                        <h4>Samsung Refrigerator 2 Doors 305L #RT31CG5021S9UN</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/25.png" alt="">
+                        <h4>LG Refrigerator 2 Doors 335L #GN-D322PBMB</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/26.png" alt="">
+                        <h4>Toshiba Refrigerator 2 Doors 233L #GR-RT303WE</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/27.png" alt="">
+                        <h4>LG Refrigerator 2 Doors 217L #GN-B212PFNF / PQNF</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/28.png" alt="">
+                        <h4>Samsung Refrigerator 2 Doors 460L #RT47CB668422ST</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/29.png" alt="">
+                        <h4>Toshiba Refrigerator 2 Doors 194L #GR-RT252WE</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/30.png" alt="">
+                        <h4>Samsung Refrigerator 243L #RT-22FARBDS8/UN</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/31.png" alt="">
+                        <h4>Samsung Refrigerator 578L #RS57DG4100B4ST</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/32.png" alt="">
+                        <h4>Midea Water Dispenser #JL1643S</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/33.png" alt="">
+                        <h4>Midea Water Dispenser #JL1633S-UF</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/34.png" alt="">
+                        <h4>Midea Water Dispenser #YL2036S</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/35.png" alt="">
+                        <h4>LG TV UHD 65" #65UA8450PSA</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/36.png" alt="">
+                        <h4>LG TV 43" #43LM5500PTA</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/37.png" alt="">
+                        <h4>Samsung TV UHD 43" #UA43U8000FKXXT</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/38.png" alt="">
+                        <h4>Samsung TV UHD 65" #UA65U8000FKXXT</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/39.png" alt="">
+                        <h4>Toshiba Microwave 20L #MWP-MM20P</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-up" class="product-card">
+                        <img class="icon_kh"
+                            src="https://img.icons8.com/?size=100&id=2ui1n4CYeion&format=png&color=000000" alt="">
+                        <i class="heart_cart" data-lucide="heart"></i>
+                        <img class="product-image" src="IMG/Local_Product/electro_/40.png" alt="">
+                        <h4>LG TV UHD 55" #55UA8450PSA</h4>
+                        <div class="product-price">$2.99</div>
+                        <button class="btn btn-add">
+                            <i class="icon_cart" data-lucide="shopping-cart"></i>Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section (Hidden by default) -->
+    <section id="cart" class="cart-section" style="display:none;">
+        <div class="container">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <a href="#home" class="btn btn-secondary">Continue Shopping</a>
+            </div>
+            <div class="cart-content">
+                <p style="text-align: center; color: #666;">Your cart is empty</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Psa-Krobao is your trusted online supermarket delivering quality groceries to your doorstep.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="indexkh.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="login.html">Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: lunsereyvorth@gmail.com</p>
+                <p>Phone: +855-97-7421-375</p>
+                <p>Hours: Mon-Sun 8AM-10PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PsaKrobao. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            delay: 20,
+            duration: 500,
+            easing: 'ease-in-out',
+            once: false
+        });
+    </script>
+
+</body>
+
+</html>
